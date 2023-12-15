@@ -9,7 +9,8 @@
 400 / 500 / 600 / 700
 
 - LINE HEIGHT SYSTEM (unitless)
-DEFAULT / 1 
+DEFAULT / 1 /
+/ 1.05 / 1.6
 
 
 
@@ -23,6 +24,8 @@ DEFAULT / 1
 --- 03 SHADOWS 
 
 --- 04 BORDER RADIUS
+
+DEFAULT / 9px /
 
 --- 05 WHITE SPACE
 - SPACING SYSTEM (px)
@@ -93,6 +96,51 @@ body {
   margin-right: 1.6rem !important;
 }
 
+/***************************/
+/* NAVIGATION */
+/***************************/
+
+.main-nav {
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  transition: all 300ms;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  color: #fff;
+  background-color: #e67e22;
+
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
 /***************************/
 /* HEADER */
 /***************************/

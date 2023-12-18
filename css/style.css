@@ -619,7 +619,6 @@
 .social-links {
   display: flex;
   gap: 2.4rem;
-  justify-content: center;
 
   list-style: none;
 }

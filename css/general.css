@@ -66,6 +66,7 @@ Medium: 11px
 html {
   font-size: 0.625rem;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

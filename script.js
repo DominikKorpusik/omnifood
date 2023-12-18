@@ -10,6 +10,26 @@ btnNav.addEventListener("click", function (e) {
   header.classList.toggle("nav-open");
 });
 
+//Sticky
+const sectionHero = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  (ent) => {
+    const entries = ent[0];
+    if (!entries.isIntersecting) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHero);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
